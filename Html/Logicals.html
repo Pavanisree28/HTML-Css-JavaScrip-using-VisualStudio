@@ -1,0 +1,36 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+</head>
+<body>
+    <script>
+        let a = 100, b = 20, c = 30;
+        //AND operator 
+        console.log("(a>b)&&(a>c):is", (a > b) && (a > c));//true
+        console.log("(a>b)&&(a<c):is", (a > b) && (a < c));//false
+        console.log("(a<b)&&(a>c):is", (a < b) && (a > c));//false
+        console.log("(a<b)&&(a<c):is", (a < b) && (a < c));//false
+        //OR operator 
+        console.log("(a>b)&&(a>c):is", (a > b) || (a > c));//true
+        console.log("(a>b)&&(a<c):is", (a > b) || (a < c));//true
+        console.log("(a<b)&&(a>c):is", (a < b) || (a > c));//true
+        console.log("(a<b)&&(a<c):is", (a < b) || (a < c));//false
+
+        //bit wise
+
+        let e = 2, f = 6,g=5
+        console.log("e & f is ", e & f);//2
+        console.log("e | g is ", e | g );
+        console.log("e << 1 is ", a << 1);
+        console.log("e >> 1 is ", a >> 1);
+
+
+
+
+    </script>
+
+
+</body>
+</html>

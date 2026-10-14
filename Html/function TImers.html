@@ -1,0 +1,63 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+</head>
+<body>
+    <!--<p>Wait  for 6  seconds(6000 milliseconds)</p>
+    <h2 id="myid"></h2>-->
+    <!--<p>Wait  for 1 seconds(1000 milliseconds)</p>
+    <h2 id="myid"></h2>-->
+    <button onclick="stopInterval()">Stop Interval</button>
+    <button onclick="stopTimeout()">Stop Timeout</button>
+    <p>Wait fro 6  seconds(6000 millisecond)</p>
+    <h2 id="myid"></h2>
+        <script>
+            //setTimeout(myfunction, 6000);
+            //function myfunction() {
+            //    display("Ram12345");
+            //}
+            //function display(text) {
+            //    debugger;
+            //    let data = document.getElementById("myid");
+            //    data.innerHTML += text + "<br>";
+            //}
+            //myfunction();
+            //display("Ram123");
+
+            //setInterval(myfunction, 1000);
+            //function myfunction() {
+            //    display("Ram12345");
+            //}
+            //function display(text) {
+            //    debugger;
+            //    let data = document.getElementById("myid");
+            //    data.innerHTML += text + "<br>";
+            //}
+            let intervalid = setInterval(myfunction, 1000);
+            let timeoutid = setTimeout(myfunction, 6000);
+            function myfunction() {
+                display("Ram123");
+            }
+            function display(text) {
+                debugger;
+                let data = document.getElementById("myid");
+                data.innerHTML += text + "<br>";
+            }
+            function stopInterval() {
+                clearInterval(intervalid);
+                display("Interval Stopped");
+
+            }
+            function setTimeout() {
+                clearTimeout(timeoutid);
+                display("Timeout Cancelled");
+
+            }
+
+
+        </script>
+
+</body>
+</html>

@@ -1,0 +1,25 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+</head>
+<body>
+    <script>
+        function myFunction() {
+            var x = 10;
+            let y = 20;
+            const z = 30;
+            console.log("inside the block of var x is:" + x);
+            console.log("inside the block of let y is:" + y);
+            console.log("inside the block of const z is:" + z);
+        }
+        console.log("outside the block of var x is:" + x);//this will throw an error because x it is outside the function
+        console.log("outside the block of let y is:" + y);//this will throw an error because y  it is  outside the function
+        console.log("outside the block of const z is:" + z);//this will throw an error because z it is  outside the function
+
+    </script>
+    <button onclick="myFunction()">click me </button>
+    
+</body>
+</html>

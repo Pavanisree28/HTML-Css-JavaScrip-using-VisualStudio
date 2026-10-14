@@ -1,0 +1,43 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+</head>
+<body>
+    <script>
+        function myfunction()
+        {
+            if (true)
+            {
+                var a = 10;
+                console.log("inside a block" + a); // Output: 10
+            }
+            console.log("ouside of the block" + a); // Output: 10)
+            if (true)
+            {
+                let b = 20;
+                console.log("inside a block" + b); // Output: 20
+            }
+            try
+            {
+                console.log("ouside of the block" + b); // This will throw an error
+            } catch (error)
+            {
+                console.error("ouside of the block" + error.message); // Output: b is not defined
+            }
+            if (true)
+            {
+                const c = 30;
+                console.log("inside a block" + c); // Output: 30
+            }
+            try {
+                console.log("ouside of the block" + c); // This will throw an error
+            } catch (error) {
+                console.error("ouside of the block" + error.message); // Output: c is not defined
+            }
+        }
+        myfunction()
+    </script>
+</body>
+</html>

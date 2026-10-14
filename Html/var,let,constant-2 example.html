@@ -1,0 +1,39 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+</head>
+<body>
+  
+    <script>
+        //var is block scoped
+        // var can be declared
+        //  var can be updated
+
+        var a = 10;
+        var a = 20;
+        a = 30;
+        console.log(a);
+
+        //let is block scoped
+        //let cannot be declared
+        //let can be updated
+
+
+        let b = 20;
+        //let b=30; // This will throw an error
+        b = 30;
+        console.log(b);
+
+        //const is block scoped
+        //const cannot be declared
+        //const cannot be updated
+        const c = 30;
+        //const c=40; // This will throw an error
+        //c=50; // This will throw an error
+        console.log(c);
+
+    </script>
+</body>
+</html>
